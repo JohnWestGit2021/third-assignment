@@ -1,0 +1,246 @@
+.flex-row{
+    display: flex;
+    flex-direction: row;
+
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.main-container{
+    background-color: rgb(216, 214, 214);
+}
+.justify-center{
+    justify-content: center;
+}
+
+.justify-end{
+    justify-content: flex-end;
+}
+.align-end{
+    align-items: flex-end;
+}
+.align-center{
+    align-items: center;
+}
+.grow1{
+    flex: 1;
+}
+.grow2{
+    flex: 2;
+}
+.logo{
+  margin-left: 10px;
+}
+.header-container{
+    align-items: center;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Covered By Your Grace', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+
+}
+.header_navigation li{
+    list-style: none;
+    margin: 14px;
+}
+.header-wrapper{
+ background-color:    #2ea4aa;
+ 
+
+
+}
+.max-width{
+    max-width: 1300px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.banner-container .paragraph{
+    margin: 30px;
+    line-height: 30px;
+}
+.banner-container{
+border: solid rgb(218, 218, 218) 5px;
+margin-top: 12px;
+min-height: 400px;
+font-size: 22px;
+background-color: #fafafa;
+font-family: 'Covered By Your Grace', cursive;
+    font-weight: 700;
+}
+.testimonial-wrapper{
+
+background-color: #fafafa;
+}
+.banner-wrapper{
+   box-shadow: 0px 0px 30px 0px rgba(000, 000, 000, 0.4) inset;
+
+}
+.space5{
+    padding: 20px;
+}
+.blog-item-container{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 200px;
+}
+.blog-item{
+    width: 300px;
+    margin:10px
+}
+.item-image-wrapper{
+    height: 150px; background-image: url(./assets/community.jpg); background-size: cover;margin: 10px;
+border: rgb(202, 202, 202,0.4) solid 1px;
+
+}
+.divider{
+ margin: 20px;
+    border: solid   rgb(216, 214, 214) 1px;
+}
+.modelbutton{
+  padding: 10px;
+  border-color: transparent;
+  background-color:#2ea4aa ;
+  margin: 10px;
+  color: #eee;
+}
+@media (max-width:400px) {
+    .hide-on-mob{
+        display: none;
+    }
+
+    .row-to-col-mob{
+        flex-direction: column !important;
+    }
+    
+}
+.space10{
+margin :10px
+}
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2ea4aa;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .avatar{
+   width: 100px;
+   height: 100px;
+   border-radius: 50px;
+   margin: 20px 0px;
+   background-color: #eee;
+  }
+  .sidenav a {
+    padding: 8px 8px ;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    max-width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  .model-inputs{
+    width: 80%;
+    padding: 10px;
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    background-color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #2ea4aa;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #2ea4aa;
+    color: white;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
